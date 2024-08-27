@@ -4,4 +4,5 @@ function toggleMenu(){
 
     links.classList.toggle('open');
     icon.classList.toggle('open');
+
 }
