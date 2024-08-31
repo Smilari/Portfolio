@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/output.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class=" bg-slate-900 text-slate-300 leading-relaxed antialiased scroll-smooth selection:bg-indigo-400 selection:text-indigo-900">
+<body class=" bg-slate-900 text-slate-200 leading-relaxed antialiased scroll-smooth selection:bg-indigo-400 selection:text-indigo-900">
 
 <!-- Navbar -->
 <nav class="fixed top-0 left-0 w-full z-50 font-semibold flex justify-around items-center h-[10vh]  bg-slate-900 bg-opacity-80 backdrop-blur">
@@ -21,60 +21,74 @@
 </nav>
 
 <!-- Inicio -->
-<section id="home" class="bg-[radial-gradient(ellipse_100vw_200px,#4f46e544,#0f172a)]  relative flex h-screen w-screen">
-    <header class="flex flex-col space-y-20 text-center justify-center w-screen">
+<header id="home" class="bg-[radial-gradient(ellipse_100vw_250px,#4f46e544,#0f172a)] relative flex h-screen w-screen">
+    <div class="flex flex-col space-y-12 text-center justify-center w-screen">
         <h1 class="font-semibold text-4xl sm:text-5xl lg:text-6xl">
             <span class="block text-indigo-400 text-4xl sm:text-5xl lg:text-6xl mb-4">Software Developer</span>
-            Lucas Smilari
-        </h1>
+            Lucas Smilari</h1>
 
-        <ul class="flex justify-center items-center gap-16">
-
-            <!-- SVG de GitHub -->
-            <li class="text-xs">
-                <a class=" hover:text-indigo-400 colors-transform duration-300" href="https://github.com/smilari"
-                   target="_blank" rel="noreferrer noopener" aria-label="GitHub (se abre en una nueva pestaña)"
-                   title="GitHub">
-                    <span class="sr-only">GitHub</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-10 w-10"
-                         aria-hidden="true">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                    </svg>
-                </a>
-            </li>
-
-            <!-- SVG de CV -->
-            <li class="relative group flex items-center gap-3 bg-indigo-800 hover:bg-indigo-400 px-3 py-2 rounded-md transform duration-300 hover:scale-105">
-                <a href="./assets/resume-example.pdf" target="_blank" rel="noreferrer noopener"
-                   aria-label="Curriculum (se abre en una nueva pestaña)" title="Curriculum"><span
+        <div class="flex flex-col justify-center items-center gap-4">
+            <button class="relative text-slate-200 font-semibold group flex items-center gap-3 bg-none border border-indigo-400 hover:border-indigo-200 px-2 pb-0.5 pt-1 rounded-lg transform duration-300 hover:scale-105">
+                <a href="mailto:smilari.l" target="_blank" rel="noreferrer noopener"
+                   aria-label="Email" title="Email"><span
                         class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846.66 846.66" fill="currentColor"
-                         class="h-8 w-8" aria-hidden="true">
-                        <path class="fil0"
-                              d="M30.88 111.05l784.9 0c11.4,0 20.64,9.24 20.64,20.64l0 583.28c0,11.4 -9.24,20.64 -20.64,20.64l-784.9 0c-11.4,0 -20.64,-9.24 -20.64,-20.64l0 -583.28c0,-11.4 9.24,-20.64 20.64,-20.64zm146.05 288.17c0,27.16 -41.29,27.16 -41.29,0 0,-32.49 15.12,-63.05 40.68,-82.92 -1.61,-2.27 -3.11,-4.62 -4.48,-7.04 -6.45,-11.45 -10.12,-24.63 -10.12,-38.63 0,-43.57 35.32,-78.89 78.89,-78.89 43.56,0 78.89,35.32 78.89,78.89 0,16.39 -5.09,32.34 -14.61,45.67 25.57,19.87 40.69,50.43 40.69,82.92 0,27.16 -41.29,27.16 -41.29,0 0,-23.44 -12.59,-44.7 -33.14,-55.92 -9.59,4.06 -20.13,6.22 -30.54,6.22 -10.41,0 -20.96,-2.16 -30.55,-6.22 -20.54,11.22 -33.13,32.48 -33.13,55.92zm-55.14 91.99l237.63 0c11.4,0 20.65,9.25 20.65,20.65l0 122.41c0,11.4 -9.25,20.65 -20.65,20.65l-237.63 0c-11.4,0 -20.64,-9.25 -20.64,-20.65l0 -122.41c0,-11.4 9.24,-20.65 20.64,-20.65zm216.99 41.29l-196.34 0 0 81.13 196.34 0 0 -81.13zm-98.17 -299.47c-20.77,0 -37.6,16.83 -37.6,37.6 0,21.09 16.9,37.6 37.6,37.6 20.72,0 37.6,-16.69 37.6,-37.6 0,-20.77 -16.84,-37.6 -37.6,-37.6zm183.62 29.12c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 363.65c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm-46.81 -272.74c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 90.91c-27.16,0 -27.16,-41.29 0,-41.29l253.83 0c27.15,0 27.15,41.29 0,41.29l-253.83 0zm0 90.92c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm324.09 -382.55l-743.6 0 0 541.98 743.6 0 0 -541.98z"></path>
-                    </svg>
-
-                </a>
-                <span class="font-semibold">CV</span>
-
-            </li>
-
-
-            <!-- SVG de LinkedIn -->
-            <li class="text-xs">
-                <a class="hover:text-indigo-400 colors-transform duration-300"
-                   href="https://www.linkedin.com/in/bchiang7/"
-                   target="_blank" rel="noreferrer noopener" aria-label="CV (se abre en una nueva pestaña)"
-                   title="LinkedIn">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 w-10"
-                         aria-hidden="true">
-                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        mail
                     </svg>
                 </a>
-            </li>
-        </ul>
-    </header>
+                <span class="text-xs sm:text-sm lg:text-base">smilari.lucas@gmail.com</span>
+            </button>
+
+            <ul class="flex justify-center items-center gap-4">
+
+                <!-- SVG de CV -->
+                <li class="relative text-slate-200 font-semibold group flex items-center gap-3 bg-none border border-indigo-400 hover:border-indigo-200 px-2 pb-0.5 pt-1 rounded-lg transform duration-300 hover:scale-105">
+                    <a href="./assets/resume-example.pdf" target="_blank" rel="noreferrer noopener"
+                       aria-label="Curriculum (se abre en una nueva pestaña)" title="Curriculum"><span
+                            class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846.66 846.66" fill="currentColor"
+                             class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8" aria-hidden="true">
+                            <path class="fil0"
+                                  d="M30.88 111.05l784.9 0c11.4,0 20.64,9.24 20.64,20.64l0 583.28c0,11.4 -9.24,20.64 -20.64,20.64l-784.9 0c-11.4,0 -20.64,-9.24 -20.64,-20.64l0 -583.28c0,-11.4 9.24,-20.64 20.64,-20.64zm146.05 288.17c0,27.16 -41.29,27.16 -41.29,0 0,-32.49 15.12,-63.05 40.68,-82.92 -1.61,-2.27 -3.11,-4.62 -4.48,-7.04 -6.45,-11.45 -10.12,-24.63 -10.12,-38.63 0,-43.57 35.32,-78.89 78.89,-78.89 43.56,0 78.89,35.32 78.89,78.89 0,16.39 -5.09,32.34 -14.61,45.67 25.57,19.87 40.69,50.43 40.69,82.92 0,27.16 -41.29,27.16 -41.29,0 0,-23.44 -12.59,-44.7 -33.14,-55.92 -9.59,4.06 -20.13,6.22 -30.54,6.22 -10.41,0 -20.96,-2.16 -30.55,-6.22 -20.54,11.22 -33.13,32.48 -33.13,55.92zm-55.14 91.99l237.63 0c11.4,0 20.65,9.25 20.65,20.65l0 122.41c0,11.4 -9.25,20.65 -20.65,20.65l-237.63 0c-11.4,0 -20.64,-9.25 -20.64,-20.65l0 -122.41c0,-11.4 9.24,-20.65 20.64,-20.65zm216.99 41.29l-196.34 0 0 81.13 196.34 0 0 -81.13zm-98.17 -299.47c-20.77,0 -37.6,16.83 -37.6,37.6 0,21.09 16.9,37.6 37.6,37.6 20.72,0 37.6,-16.69 37.6,-37.6 0,-20.77 -16.84,-37.6 -37.6,-37.6zm183.62 29.12c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 363.65c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm-46.81 -272.74c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 90.91c-27.16,0 -27.16,-41.29 0,-41.29l253.83 0c27.15,0 27.15,41.29 0,41.29l-253.83 0zm0 90.92c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm324.09 -382.55l-743.6 0 0 541.98 743.6 0 0 -541.98z"></path>
+                        </svg>
+                    </a>
+                    <span class="text-xs sm:text-sm lg:text-base">CV</span>
+                </li>
+
+                <!-- SVG de GitHub -->
+                <li class="relative text-slate-200 font-semibold group flex items-center gap-3 bg-none border border-indigo-400 hover:border-indigo-200 px-2 pb-0.5 pt-1 rounded-lg transform duration-300 hover:scale-105">
+                    <a href="https://github.com/smilari" target="_blank" rel="noreferrer noopener"
+                       aria-label="GitHub (se abre en una nueva pestaña)" title="GitHub"><span
+                            class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                             class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <span class="text-xs sm:text-sm lg:text-base">GitHub</span>
+                </li>
+
+                <!-- SVG de LinkedIn -->
+                <li class="relative text-slate-200 font-semibold group flex items-center gap-3 bg-none border border-indigo-400 hover:border-indigo-200 px-2 pb-0.5 pt-1 rounded-lg transform duration-300 hover:scale-105">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
+                       aria-label="LinkedIn (se abre en una nueva pestaña)" title="LinkedIn"><span
+                            class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8"
+                             aria-hidden="true">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                    </a>
+                    <span class="text-xs sm:text-sm lg:text-base">LinkedIn</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Container de tecnologías (SVG) -->
     <footer class="absolute bottom-20 left-0 right-0 flex justify-center items-center gap-3">
@@ -191,10 +205,10 @@
             </g>
         </svg>
     </footer>
-</section>
+</header>
 
 <!-- Sobre Mí -->
-<section id="about" class="flex flex-col mt-20 pt-[10vh] gap-8 mx-auto w-5/6 lg:w-1/2 ">
+<section id="about" class="flex flex-col mt-20 pt-[10vh] gap-8 mx-auto w-5/6 lg:w-1/2">
     <h2 class="relative text-center font-semibold inline-block text-2xl text-indigo-400 lg:text-left after:hidden after:lg:block after:absolute after:w-3/4 after:h-px after:bg-indigo-400 after:top-1/2 after:right-0">
         Sobre Mí
     </h2>
@@ -212,7 +226,6 @@
             seguir creciendo profesionalmente.
         </p>
     </div>
-
 </section>
 
 <!-- Proyectos -->
@@ -221,6 +234,7 @@
         Proyectos
     </h2>
     <ul class="group/list mx-auto grid sm:grid-cols-1 lg:grid-cols-2 gap-16">
+
         <!-- Ejercito militar argentino -->
         <li class="group col-span-2 relative flex flex-col pb-1 transition-all gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
             <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
@@ -272,7 +286,7 @@
                     la contraseña entrante.
                 </p>
             </div>
-            <ul class="z-10 mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
+            <ul class="relative mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
                 <li class="mr-1.5 mt-2">
                     <div class="flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium leading-5 text-indigo-400 ">
                         Java
@@ -306,8 +320,9 @@
             </ul>
         </li>
 
+        <!-- Ejercito militar argentino -->
+
     </ul>
 </section>
-
 </body>
 </html>
