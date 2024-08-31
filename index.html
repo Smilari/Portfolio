@@ -5,42 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Smilari</title>
     <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-slate-900 text-slate-400 leading-relaxed antialiased selection:bg-teal-300 selection:text-teal-900">
+<body class=" bg-slate-900 text-slate-300 leading-relaxed antialiased scroll-smooth selection:bg-indigo-400 selection:text-indigo-900">
 
 <!-- Navbar -->
-<nav class="fixed top-0 left-0 w-full z-50 flex justify-around items-center h-[10vh] bg-slate-900 bg-opacity-80 backdrop-blur">
-    <a href="#"
-       class="m-2 font-semibold text-lg border-b-2 border-teal-300 hover:text-slate-300 transition-colors duration-300">Lucas
-        Smilari</a>
-    <div>
-        <ul class="flex gap-8">
-            <li><a href="#about" class="text-lg hover:text-slate-300 transition-colors duration-300">Acerca de</a>
-            </li>
-            <li><a href="#experience"
-                   class="text-lg hover:text-slate-300 transition-colors duration-300">Experiencia</a>
-            </li>
-            <li><a href="#projects"
-                   class="text-lg hover:text-slate-300 transition-colors duration-300">Proyectos</a></li>
-            <li><a href="#contact" class="text-lg hover:text-slate-300 transition-colors duration-300">Contacto</a>
-            </li>
-        </ul>
-    </div>
+<nav class="fixed top-0 left-0 w-full z-50 font-semibold flex justify-around items-center h-[10vh]  bg-slate-900 bg-opacity-80 backdrop-blur">
+    <ul class="flex gap-8">
+        <li><a href="#home" class="text-lg hover:text-indigo-400 transition-colors duration-300">Inicio</a></li>
+        <li><a href="#projects" class="text-lg hover:text-indigo-400 transition-colors duration-300">Proyectos</a></li>
+        <li><a href="#about" class="text-lg hover:text-indigo-400 transition-colors duration-300">Sobre mí</a></li>
+        <li><a href="#contact" class="text-lg hover:text-indigo-400 transition-colors duration-300">Contacto</a>
+        </li>
+    </ul>
 </nav>
 
 <!-- Inicio -->
-<section class="relative flex h-screen w-screen">
+<section id="home" class="bg-[radial-gradient(ellipse_100vw_200px,#4f46e544,#0f172a)]  relative flex h-screen w-screen">
     <header class="flex flex-col space-y-20 text-center justify-center w-screen">
-        <h1 class="font-bold text-slate-300 text-4xl sm:text-5xl lg:text-6xl">
-            <span class="block text-teal-300 text-5xl sm:text-6xl lg:text-7xl mb-4">Software Developer</span>
+        <h1 class="font-semibold text-4xl sm:text-5xl lg:text-6xl">
+            <span class="block text-indigo-400 text-4xl sm:text-5xl lg:text-6xl mb-4">Software Developer</span>
             Lucas Smilari
         </h1>
 
-        <ul class="flex justify-center items-center gap-8">
+        <ul class="flex justify-center items-center gap-16">
 
             <!-- SVG de GitHub -->
             <li class="text-xs">
-                <a class="block hover:text-slate-200 colors-transform duration-300" href="https://github.com/smilari"
+                <a class=" hover:text-indigo-400 colors-transform duration-300" href="https://github.com/smilari"
                    target="_blank" rel="noreferrer noopener" aria-label="GitHub (se abre en una nueva pestaña)"
                    title="GitHub">
                     <span class="sr-only">GitHub</span>
@@ -51,11 +43,29 @@
                 </a>
             </li>
 
+            <!-- SVG de CV -->
+            <li class="relative group flex items-center gap-3 bg-indigo-800 hover:bg-indigo-400 px-3 py-2 rounded-md transform duration-300 hover:scale-105">
+                <a href="./assets/resume-example.pdf" target="_blank" rel="noreferrer noopener"
+                   aria-label="Curriculum (se abre en una nueva pestaña)" title="Curriculum"><span
+                        class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846.66 846.66" fill="currentColor"
+                         class="h-8 w-8" aria-hidden="true">
+                        <path class="fil0"
+                              d="M30.88 111.05l784.9 0c11.4,0 20.64,9.24 20.64,20.64l0 583.28c0,11.4 -9.24,20.64 -20.64,20.64l-784.9 0c-11.4,0 -20.64,-9.24 -20.64,-20.64l0 -583.28c0,-11.4 9.24,-20.64 20.64,-20.64zm146.05 288.17c0,27.16 -41.29,27.16 -41.29,0 0,-32.49 15.12,-63.05 40.68,-82.92 -1.61,-2.27 -3.11,-4.62 -4.48,-7.04 -6.45,-11.45 -10.12,-24.63 -10.12,-38.63 0,-43.57 35.32,-78.89 78.89,-78.89 43.56,0 78.89,35.32 78.89,78.89 0,16.39 -5.09,32.34 -14.61,45.67 25.57,19.87 40.69,50.43 40.69,82.92 0,27.16 -41.29,27.16 -41.29,0 0,-23.44 -12.59,-44.7 -33.14,-55.92 -9.59,4.06 -20.13,6.22 -30.54,6.22 -10.41,0 -20.96,-2.16 -30.55,-6.22 -20.54,11.22 -33.13,32.48 -33.13,55.92zm-55.14 91.99l237.63 0c11.4,0 20.65,9.25 20.65,20.65l0 122.41c0,11.4 -9.25,20.65 -20.65,20.65l-237.63 0c-11.4,0 -20.64,-9.25 -20.64,-20.65l0 -122.41c0,-11.4 9.24,-20.65 20.64,-20.65zm216.99 41.29l-196.34 0 0 81.13 196.34 0 0 -81.13zm-98.17 -299.47c-20.77,0 -37.6,16.83 -37.6,37.6 0,21.09 16.9,37.6 37.6,37.6 20.72,0 37.6,-16.69 37.6,-37.6 0,-20.77 -16.84,-37.6 -37.6,-37.6zm183.62 29.12c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 363.65c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm-46.81 -272.74c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 90.91c-27.16,0 -27.16,-41.29 0,-41.29l253.83 0c27.15,0 27.15,41.29 0,41.29l-253.83 0zm0 90.92c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm324.09 -382.55l-743.6 0 0 541.98 743.6 0 0 -541.98z"></path>
+                    </svg>
+
+                </a>
+                <span class="font-semibold">CV</span>
+
+            </li>
+
+
             <!-- SVG de LinkedIn -->
             <li class="text-xs">
-                <a class="block hover:text-slate-200 colors-transform duration-300"
-                   href="https://www.linkedin.com/in/bchiang7/" target="_blank" rel="noreferrer noopener"
-                   aria-label="LinkedIn (se abre en una nueva pestaña)" title="LinkedIn">
+                <a class="hover:text-indigo-400 colors-transform duration-300"
+                   href="https://www.linkedin.com/in/bchiang7/"
+                   target="_blank" rel="noreferrer noopener" aria-label="CV (se abre en una nueva pestaña)"
+                   title="LinkedIn">
                     <span class="sr-only">LinkedIn</span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-10 w-10"
                          aria-hidden="true">
@@ -63,27 +73,12 @@
                     </svg>
                 </a>
             </li>
-
-            <!-- SVG de CV -->
-            <li class="text-xs">
-                <a class="block hover:text-slate-200 colors-transform duration-300" href="./assets/resume-example.pdf"
-                   target="_blank" rel="noreferrer noopener" aria-label="CV (se abre en una nueva pestaña)"
-                   title="Curriculum">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 846.66 846.66" fill="currentColor"
-                         class="h-10 w-10" aria-hidden="true">
-                        <path class="fil0"
-                              d="M30.88 111.05l784.9 0c11.4,0 20.64,9.24 20.64,20.64l0 583.28c0,11.4 -9.24,20.64 -20.64,20.64l-784.9 0c-11.4,0 -20.64,-9.24 -20.64,-20.64l0 -583.28c0,-11.4 9.24,-20.64 20.64,-20.64zm146.05 288.17c0,27.16 -41.29,27.16 -41.29,0 0,-32.49 15.12,-63.05 40.68,-82.92 -1.61,-2.27 -3.11,-4.62 -4.48,-7.04 -6.45,-11.45 -10.12,-24.63 -10.12,-38.63 0,-43.57 35.32,-78.89 78.89,-78.89 43.56,0 78.89,35.32 78.89,78.89 0,16.39 -5.09,32.34 -14.61,45.67 25.57,19.87 40.69,50.43 40.69,82.92 0,27.16 -41.29,27.16 -41.29,0 0,-23.44 -12.59,-44.7 -33.14,-55.92 -9.59,4.06 -20.13,6.22 -30.54,6.22 -10.41,0 -20.96,-2.16 -30.55,-6.22 -20.54,11.22 -33.13,32.48 -33.13,55.92zm-55.14 91.99l237.63 0c11.4,0 20.65,9.25 20.65,20.65l0 122.41c0,11.4 -9.25,20.65 -20.65,20.65l-237.63 0c-11.4,0 -20.64,-9.25 -20.64,-20.65l0 -122.41c0,-11.4 9.24,-20.65 20.64,-20.65zm216.99 41.29l-196.34 0 0 81.13 196.34 0 0 -81.13zm-98.17 -299.47c-20.77,0 -37.6,16.83 -37.6,37.6 0,21.09 16.9,37.6 37.6,37.6 20.72,0 37.6,-16.69 37.6,-37.6 0,-20.77 -16.84,-37.6 -37.6,-37.6zm183.62 29.12c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 363.65c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm-46.81 -272.74c-27.15,0 -27.15,-41.29 0,-41.29l300.64 0c27.15,0 27.15,41.29 0,41.29l-300.64 0zm46.81 90.91c-27.16,0 -27.16,-41.29 0,-41.29l253.83 0c27.15,0 27.15,41.29 0,41.29l-253.83 0zm0 90.92c-27.16,0 -27.16,-41.3 0,-41.3l253.83 0c27.15,0 27.15,41.3 0,41.3l-253.83 0zm324.09 -382.55l-743.6 0 0 541.98 743.6 0 0 -541.98z"></path>
-                    </svg>
-
-                </a>
-            </li>
         </ul>
     </header>
 
     <!-- Container de tecnologías (SVG) -->
-    <div class="absolute bottom-10 left-0 right-0 flex justify-center items-center gap-5">
-        <svg class="w-9 h-9 opacity-90" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+    <footer class="absolute bottom-20 left-0 right-0 flex justify-center items-center gap-3">
+        <svg class="w-7 h-7 opacity-75" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title>
@@ -91,7 +86,7 @@
                       style="fill:#44a8b3"></path>
             </g>
         </svg>
-        <svg class="w-9 h-9 opacity-90" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-7 h-7 opacity-75" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -101,7 +96,7 @@
                       fill="white"></path>
             </g>
         </svg>
-        <svg class="w-9 h-9 opacity-90" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-7 h-7 opacity-75" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -111,7 +106,7 @@
                       fill="white"></path>
             </g>
         </svg>
-        <svg class="w-9 h-9 opacity-90" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript"
+        <svg class="w-7 h-7 opacity-75" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript"
              role="img" fill="#ffffff">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -120,7 +115,7 @@
                 <path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"></path>
             </g>
         </svg>
-        <svg class="w-9 h-9 opacity-90" viewBox="0 0 109.19 122.88" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        <svg class="w-7 h-7 opacity-75" viewBox="0 0 109.19 122.88" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
              x="0px" y="0px" xml:space="preserve"><style type="text/css">.st0 {
             fill-rule: evenodd;
             clip-rule: evenodd;
@@ -151,7 +146,7 @@
                       d="M107.81,30.72c-0.86-1.48-2.04-2.78-3.34-3.53L59.33,1.13c-2.6-1.5-6.86-1.5-9.46,0L4.73,27.19 C2.13,28.69,0,32.38,0,35.38V87.5c0,1.5,0.53,3.17,1.39,4.66L54.6,61.44L107.81,30.72L107.81,30.72L107.81,30.72z"/>
                 <path class="st3"
                       d="M54.6,97.84c-20.07,0-36.4-16.33-36.4-36.4s16.33-36.4,36.4-36.4c12.95,0,25.03,6.97,31.52,18.19l-15.75,9.12 c-3.25-5.62-9.29-9.1-15.77-9.1c-10.04,0-18.2,8.16-18.2,18.2c0,10.03,8.16,18.2,18.2,18.2c6.48,0,12.52-3.49,15.77-9.1l15.75,9.12 C79.63,90.87,67.55,97.84,54.6,97.84L54.6,97.84L54.6,97.84z"/></g></svg>
-        <svg class="w-9 h-9 opacity-90" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-7 h-7 opacity-75" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -173,7 +168,7 @@
                       fill="#5382A1"></path>
             </g>
         </svg>
-        <svg class="w-9 h-9 opacity-90" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
+        <svg class="w-7 h-7 opacity-75" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#ffffff">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
             <g id="SVGRepo_iconCarrier">
@@ -184,7 +179,7 @@
                 </g>
             </g>
         </svg>
-        <svg class="w-9 h-9 opacity-90" viewBox="0 -2 256 256" xmlns="http://www.w3.org/2000/svg"
+        <svg class="w-7 h-7 opacity-75" viewBox="0 -2 256 256" xmlns="http://www.w3.org/2000/svg"
              preserveAspectRatio="xMidYMid" fill="#ffffff">
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -195,154 +190,122 @@
                       fill="#00546B"></path>
             </g>
         </svg>
+    </footer>
+</section>
+
+<!-- Sobre Mí -->
+<section id="about" class="flex flex-col mt-20 pt-[10vh] gap-8 mx-auto w-5/6 lg:w-1/2 ">
+    <h2 class="relative text-center font-semibold inline-block text-2xl text-indigo-400 lg:text-left after:hidden after:lg:block after:absolute after:w-3/4 after:h-px after:bg-indigo-400 after:top-1/2 after:right-0">
+        Sobre Mí
+    </h2>
+    <div class="font-medium">
+        <p class="mb-3">
+            ¡Hola! Soy <strong class="text-blue-400 font-medium">Lucas Smilari</strong>, tengo <strong
+                class="text-blue-400 font-medium">23 años</strong> y <strong class="text-blue-400 font-medium">soy de
+            Argentina</strong>.
+            Actualmente finalizando una carrera de grado como <strong class="text-blue-400 font-medium">Técnico Superior
+            en Informatica Aplicada en UTN (INSPT)</strong>.
+        </p>
+        <p class="mb-3"></p>
+        <p>
+            Estoy siempre dispuesto a aprender nuevas tecnologías y afrontar nuevos desafíos laborales que me permitan
+            seguir creciendo profesionalmente.
+        </p>
     </div>
+
 </section>
 
 <!-- Proyectos -->
-<section class="flex flex-col my-28 gap-10 items-center w-screen">
-    <h2 class="relative font-semibold inline-block text-2xl text-slate-300 font-mono">
+<section id="projects" class="flex flex-col mt-20 pt-[10vh] gap-8 mx-auto w-5/6 lg:w-1/2">
+    <h2 class="relative text-center font-semibold inline-block text-2xl text-indigo-400 lg:text-left after:hidden after:lg:block after:absolute after:w-3/4 after:h-px after:bg-indigo-400 after:top-1/2 after:right-0">
         Proyectos
     </h2>
-    <ul class="group/list w-3/6 mx-auto grid sm:grid-cols-1 lg:grid-cols-2 gap-16">
+    <ul class="group/list mx-auto grid sm:grid-cols-1 lg:grid-cols-2 gap-16">
         <!-- Ejercito militar argentino -->
-        <li>
-            <div class="group relative flex flex-col pb-1 transition-all sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <img src="assets/imagen.png" alt="Imagén de la web" class="relative z-10">
-                <div class="z-10">
-                    <h3 class="flex justify-between font-medium leading-snug text-slate-200">
-                        <a class="inline-flex items-baseline hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
-                           href="" target="_blank" rel="noreferrer noopener"
-                           aria-label="Repositorio del ejercito militar argentino (se abre en una nueva pestaña)"><span
-                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Ejercito Militar
-                            <!-- Espacio --> <span class="inline-block">Argentino<svg xmlns="http://www.w3.org/2000/svg"
-                                                                           viewBox="0 0 20 20" fill="currentColor"
-                                                                           class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                                                           aria-hidden="true"><path
-                                    fill-rule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clip-rule="evenodd"></path></svg></span></span></a>
-                        <div class="flex gap-2">
-                                <a href="https://github.com/Smilari/Ejercito-Militar-Argentino-Java" aria-label="GitHub Link"
-                                   target="_blank" rel="noopener noreferrer" title="Github">
-                                    <span class="sr-only">GitHub</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                         class="relative z-10 h-5 w-5 hover:text-teal-300 colors-transform duration-300"
-                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                    </svg>
-                                </a>
-                                <a href="" aria-label="External Link" target="_blank"
-                                   rel="noopener noreferrer" title="External Link">
-                                    <span class="sr-only">External Link</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                         class="relative z-10 h-5 w-5 hover:text-teal-300 colors-transform duration-300" stroke="currentColor"
-                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                        <polyline points="15 3 21 3 21 9"></polyline>
-                                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                                    </svg>
-                                </a>
-                        </div>
-                    </h3>
-                    <p class="mt-2 text-sm leading-normal">Collaborated with other student designers and engineers on
-                        pro-bono projects to create new brands, design systems, and websites for organizations in the
-                        community.</p>
-                    <ul class="mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                Java
-                            </div>
-                        </li>
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                Spring
-                            </div>
-                        </li>
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                Thymeleaf
-                            </div>
-                        </li>
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                MySql
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+        <li class="group col-span-2 relative flex flex-col pb-1 transition-all gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+            <img src="assets/ejercito-militar-web.webp" alt="Imagén de la web"
+                 class="relative z-10 w-full max-h-40 object-cover object-center rounded-md">
+            <div class="z-10">
+                <h3 class="flex justify-between font-semibold leading-snug ">
+                    <a class="inline-flex items-baseline hover:text-indigo-400 focus-visible:text-indigo-400 group/link text-base"
+                       href="https://github.com/Smilari/Ejercito-Militar-Argentino-Java/tree/final" target="_blank"
+                       rel="noreferrer noopener"
+                       aria-label="Repositorio del ejercito militar argentino (se abre en una nueva pestaña)"><span
+                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Ejercito Militar
+                        <!-- Espacio --> <span class="inline-block">Argentino<svg xmlns="http://www.w3.org/2000/svg"
+                                                                                  viewBox="0 0 20 20"
+                                                                                  fill="currentColor"
+                                                                                  class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                                  aria-hidden="true"><path
+                                fill-rule="evenodd"
+                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                clip-rule="evenodd"></path></svg></span></span></a>
+                    <div class="flex gap-2">
+                        <a href="https://github.com/Smilari/Ejercito-Militar-Argentino-Java/tree/final"
+                           aria-label="GitHub Link"
+                           target="_blank" rel="noopener noreferrer" title="Github">
+                            <span class="sr-only">GitHub</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                 class="relative z-10 h-5 w-5 hover:text-indigo-400 colors-transform duration-300"
+                                 stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="" aria-label="External Link" target="_blank"
+                           rel="noopener noreferrer" title="External Link">
+                            <span class="sr-only">External Link</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                 class="relative z-10 h-5 w-5 hover:text-indigo-400 colors-transform duration-300"
+                                 stroke="currentColor"
+                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </h3>
+                <p class="mt-2 text-sm leading-normal">Web de Gestión ABM para soldados con rangos diferenciados y login
+                    personalizado. Se utilizo Spring Security para garantizar la seguridad de cada usuario, encriptando
+                    la contraseña entrante.
+                </p>
             </div>
+            <ul class="z-10 mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
+                <li class="mr-1.5 mt-2">
+                    <div class="flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium leading-5 text-indigo-400 ">
+                        Java
+                    </div>
+                </li>
+                <li class="mr-1.5 mt-2">
+                    <div class="flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium leading-5 text-indigo-400 ">
+                        Spring
+                    </div>
+                </li>
+                <li class="mr-1.5 mt-2">
+                    <div class="flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium leading-5 text-indigo-400 ">
+                        Spring Security
+                    </div>
+                </li>
+                <li class="mr-1.5 mt-2">
+                    <div class="flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium leading-5 text-indigo-400 ">
+                        Thymeleaf
+                    </div>
+                </li>
+                <li class="mr-1.5 mt-2">
+                    <div class="flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium leading-5 text-indigo-400 ">
+                        MySQL
+                    </div>
+                </li>
+                <li class="mr-1.5 mt-2">
+                    <div class="flex items-center rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium leading-5 text-indigo-400 ">
+                        Hibernate
+                    </div>
+                </li>
+            </ul>
         </li>
-        <li>
-            <div class="group relative flex flex-col pb-1 transition-all sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <img src="assets/imagen.png" alt="Imagén de la web" class="relative z-10">
-                <div class="z-10">
-                    <h3 class="flex justify-between font-medium leading-snug text-slate-200">
-                        <a class="inline-flex items-baseline hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                           href="" target="_blank" rel="noreferrer noopener"
-                           aria-label="Repositorio del ejercito militar argentino (se abre en una nueva pestaña)"><span
-                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Ejercito Militar
-                            <!-- Espacio --> <span class="inline-block">Argentino<svg xmlns="http://www.w3.org/2000/svg"
-                                                                                      viewBox="0 0 20 20" fill="currentColor"
-                                                                                      class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                                                                                      aria-hidden="true"><path
-                                    fill-rule="evenodd"
-                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                                    clip-rule="evenodd"></path></svg></span></span></a>
-                        <div class="flex gap-2">
-                            <a href="https://github.com/Smilari/Ejercito-Militar-Argentino-Java" aria-label="GitHub Link"
-                               target="_blank" rel="noopener noreferrer" title="Github">
-                                <span class="sr-only">GitHub</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                     class="relative z-10 h-5 w-5 hover:text-teal-300 colors-transform duration-300"
-                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                     stroke-linejoin="round">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                            </a>
-                            <a href="" aria-label="External Link" target="_blank"
-                               rel="noopener noreferrer" title="External Link">
-                                <span class="sr-only">External Link</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                     class="relative z-10 h-5 w-5 hover:text-teal-300 colors-transform duration-300" stroke="currentColor"
-                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                </svg>
-                            </a>
-                        </div>
-                    </h3>
-                    <p class="mt-2 text-sm leading-normal">Collaborated with other student designers and engineers on
-                        pro-bono projects to create new brands, design systems, and websites for organizations in the
-                        community.</p>
-                    <ul class="mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                Java
-                            </div>
-                        </li>
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                Spring
-                            </div>
-                        </li>
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                Thymeleaf
-                            </div>
-                        </li>
-                        <li class="mr-1.5 mt-2">
-                            <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                MySql
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </li>
+
     </ul>
 </section>
 
