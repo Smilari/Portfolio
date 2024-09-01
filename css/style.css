@@ -10,3 +10,8 @@ html{
 body{
     font-family: 'Montserrat', 'Poppins', sans-serif;
 }
+
+.nav-active {
+    color: #818cf8; /* Indigo 400 */
+    transition: color 0.3s;
+}
