@@ -13,10 +13,8 @@
 <nav class="fixed top-0 left-0 w-full z-50 font-semibold flex justify-around items-center h-[10vh]  bg-slate-900 bg-opacity-80 backdrop-blur">
     <ul class="flex gap-8">
         <li><a href="#home" class="text-lg hover:text-indigo-400 transition-colors duration-300">Inicio</a></li>
-        <li><a href="#projects" class="text-lg hover:text-indigo-400 transition-colors duration-300">Proyectos</a></li>
         <li><a href="#about" class="text-lg hover:text-indigo-400 transition-colors duration-300">Sobre mí</a></li>
-        <li><a href="#contact" class="text-lg hover:text-indigo-400 transition-colors duration-300">Contacto</a>
-        </li>
+        <li><a href="#projects" class="text-lg hover:text-indigo-400 transition-colors duration-300">Proyectos</a></li>
     </ul>
 </nav>
 
@@ -28,7 +26,7 @@
             Lucas Smilari</h1>
 
         <div class="flex flex-col justify-center items-center gap-4">
-            <button class="relative text-slate-200 font-semibold group flex items-center gap-3 bg-none border border-indigo-400 hover:border-indigo-200 px-2 pb-0.5 pt-1 rounded-lg transform duration-300 hover:scale-105">
+            <button class="relative text-slate-200 font-semibold group flex items-center gap-3 bg-indigo-400 px-2 pb-0.5 pt-1 rounded-lg transform duration-300 hover:scale-105">
                 <a href="mailto:smilari.l" target="_blank" rel="noreferrer noopener"
                    aria-label="Email" title="Email"><span
                         class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
@@ -79,7 +77,8 @@
                     <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener"
                        aria-label="LinkedIn (se abre en una nueva pestaña)" title="LinkedIn"><span
                             class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8"
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8"
                              aria-hidden="true">
                             <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
                         </svg>
@@ -212,21 +211,35 @@
     <h2 class="relative text-center font-semibold inline-block text-2xl text-indigo-400 lg:text-left after:hidden after:lg:block after:absolute after:w-3/4 after:h-px after:bg-indigo-400 after:top-1/2 after:right-0">
         Sobre Mí
     </h2>
-    <div class="font-medium">
-        <p class="mb-3">
-            ¡Hola! Soy <strong class="text-blue-400 font-medium">Lucas Smilari</strong>, tengo <strong
-                class="text-blue-400 font-medium">23 años</strong> y <strong class="text-blue-400 font-medium">soy de
-            Argentina</strong>.
-            Actualmente finalizando una carrera de grado como <strong class="text-blue-400 font-medium">Técnico Superior
-            en Informatica Aplicada en UTN (INSPT)</strong>.
-        </p>
-        <p class="mb-3"></p>
+    <div class="font-medium space-y-8">
         <p>
-            Estoy siempre dispuesto a aprender nuevas tecnologías y afrontar nuevos desafíos laborales que me permitan
-            seguir creciendo profesionalmente.
+            ¡Hola! Soy <strong>Lucas Smilari</strong> de <strong>Argentina</strong>. Egresé en 2021 de la <a
+                href="https://et21.com.ar"
+                class="text-blue-400 font-medium hover:text-blue-500" target="_blank" rel="noreferrer noopener"
+                aria-label="Escuela Fragata Libertad (se abre en una nueva pestaña)">Escuela Técnica Fragata
+            Libertad</a> como <strong>Técnico en Computación</strong>, donde descubrí mi pasión por la programación y la
+            gestión de proyectos.
+        </p>
+        <p>
+            Actualmente, estoy finalizando mi formación como <strong>Técnico Superior en Informática Aplicada</strong>
+            en <a href="https://inspt.utn.edu.ar"
+                  class="text-blue-400 font-medium hover:text-blue-500" target="_blank" rel="noreferrer noopener"
+                  aria-label="Instituto Nacional Superior del Profesorado Técnico (se abre en una nueva pestaña)">UTN
+            (INSPT)</a>. Durante mi formación, desarrollé una sólida <strong>lógica de programación</strong> y adquirí
+            conocimientos profundos en los paradigmas de programación: estructurada, orientada a objetos y funcional.
+        </p>
+        <p>
+            Disfruto del <strong>entrenamiento</strong>, la <strong>lectura</strong> (en físico de ser posible) y el aprendizaje continuo a través
+            de videos sobre ciencia, física, desarrollo y psicología. Me interesa cómo la tecnología y el conocimiento
+            científico se integran para resolver problemas complejos.
+        </p>
+        <p>
+            Soy un <strong>entusiasta del aprendizaje</strong> y del <strong>crecimiento personal</strong>. Me motiva
+            explorar nuevas tecnologías y asumir desafíos que potencien mi desarrollo profesional.
         </p>
     </div>
 </section>
+
 
 <!-- Proyectos -->
 <section id="projects" class="flex flex-col mt-20 pt-[10vh] gap-8 mx-auto w-5/6 lg:w-1/2">
