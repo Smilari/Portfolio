@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }, {
-        threshold: 0.6 // El porcentaje de visibilidad de la sección antes de activarse (ajustable)
+        threshold: 0.5 // El porcentaje de visibilidad de la sección antes de activarse (ajustable)
     });
 
     // Observa cada sección
