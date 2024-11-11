@@ -1189,6 +1189,11 @@ body{
   color: rgb(129 140 248 / var(--tw-text-opacity));
 }
 
+.hover\:text-teal-300:hover{
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
 .focus-visible\:text-indigo-400:focus-visible{
   --tw-text-opacity: 1;
   color: rgb(129 140 248 / var(--tw-text-opacity));
