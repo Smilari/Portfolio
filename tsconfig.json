@@ -15,8 +15,8 @@
       "@utils/*": [
         "src/components/utils/*"
       ],
-      "@images/*": [
-        "src/images/*"
+      "@assets/*": [
+        "src/assets/*"
       ]
     }
   }

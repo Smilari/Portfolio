@@ -14,4 +14,9 @@ export const technologyColors: { [key: string]: string } = {
   Lombok: "text-red-300",
   C: "text-gray-300",
   PL0: "text-teal-300",
+  Astro: "text-indigo-300",
+  Tailwind: "text-cyan-300",
+  TypeScript: "text-sky-300",
+  React: "text-teal-300",
+  Netlify: "text-teal-300",
 };

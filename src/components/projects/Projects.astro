@@ -1,13 +1,30 @@
 ---
 import Section from "@utils/Section.astro";
 import ProjectItem from "@components/projects/ProjectItem.astro";
+import mateyTradicion from "@assets/Mate-Tradicion.avif";
+import apiRestTodoList from "@assets/API-REST-Todo-List.avif";
+import ejercitoMilitarWeb from "@assets/ejercito-militar-web.avif";
+import bibliotecaGML from "@assets/biblioteca-GML-diagrama.avif";
+import compiladorPL0 from "@assets/Compilador-PL0.avif";
 ---
-<Section id="projects" title="Proyectos" class="mb-20">
-    <ul class="group/list mx-auto flex flex-col gap-16">
+<Section class="lg:!w-3/4" id="projects" title="Proyectos" class="mb-20">
+    <ul class="group/list mx-auto grid grid-cols-1 sm:grid-cols-2 gap-16">
+        <ProjectItem title="Mate y Tradición"
+
+                     description="Web dedicada a la exploración de la cultura y la historia del mate (bebida) a través de una interfaz intuitiva y moderna."
+                     externalLink="https://mateytradicion.netlify.app" gitLink="https://github.com/Smilari/Mateando"
+                     image={mateyTradicion}
+                     technologies={[
+                       {name: "Astro"},
+                       {name: "Tailwind"},
+                       {name: "TypeScript"},
+                       {name: "React"},
+                       {name: "Netlify"},
+                     ]}/>
         <ProjectItem title="API REST de Todo-List"
                      description="API REST para gestionar una lista de tareas. La persistencia se realizó utilizando MongoDB y el manejo de autenticación se realiza utilizando JWT."
                      externalLink="https://todografo.vercel.app" gitLink="https://github.com/Smilari/Todo-list"
-                     image="src/assets/API-REST-Todo-List.webp"
+                     image={apiRestTodoList}
                      technologies={[
                        {name: "Node.js"},
                        {name: "Express"},
@@ -18,8 +35,8 @@ import ProjectItem from "@components/projects/ProjectItem.astro";
                      ]}/>
         <ProjectItem title="Ejercito Militar Argentino"
                      description="Web de Gestión ABM para soldados con rangos diferenciados y login personalizado. Se utilizo Spring Security para garantizar la seguridad de cada usuario, encriptando la contraseña entrante."
-                     gitLink="https://github.com/Smilari/Ejercito-Militar-Argentino-Java/tree/final"
-                     image="src/assets/ejercito-militar-web.webp"
+                     gitLink="https://github.com/Smilari/Ejercito-Militar-Argentino-Java"
+                     image={ejercitoMilitarWeb}
                      technologies={[
                        {name: "Java"},
                        {name: "Spring"},
@@ -31,14 +48,16 @@ import ProjectItem from "@components/projects/ProjectItem.astro";
                      ]}/>
         <ProjectItem title="Biblioteca GML"
                      description="Proyecto ABM para gestión de socios y prestación y stock de libros. Empleando archivos binarios, punteros y funciones modularizadas. La persistencia fue recreada con archivos."
-                     gitLink="https://github.com/Smilari/Biblioteca-GML" image="src/assets/biblioteca-GML-diagrama.png"
+                     gitLink="https://github.com/Smilari/Biblioteca-GML"
+                     image={bibliotecaGML}
                      technologies={[
-                       {name: "MySQL"},
                        {name: "C"},
+                       {name: "MySQL"},
                      ]}/>
         <ProjectItem title="Compilador PL0"
-                     description="Compilador para el lenguaje PL/0 desarrollado en Java. PL/0 es un pequeño lenguaje de programación de propósito educativo utilizado para enseñar los conceptos básicos de compiladores. Este proyecto incluye las funcionalidades de análisis léxico, sintáctico y semántico, así como la generación de código."
-                     gitLink="https://github.com/Smilari/Compilador-PL0" image="src/assets/Compilador-PL0.webp"
+                     description="Compilador PL/0 (lenguaje educativo), hecho en Java. Este proyecto incluye las funcionalidades de análisis léxico, sintáctico y semántico, así como la generación de código."
+                     gitLink="https://github.com/Smilari/Compilador-PL0"
+                     image={compiladorPL0}
                      technologies={[
                        {name: "Java"},
                        {name: "PL0"},

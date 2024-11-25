@@ -2,6 +2,7 @@
 import ArrowRightIcon from "@icons/ArrowRight.astro";
 import GithubIcon from "@icons/Github.astro";
 import ExternalLinkIcon from "@icons/ExternalLink.astro";
+import { Image } from "astro:assets";
 import { technologyColors } from "../../config/technologyColors.ts";
 const {title, description, gitLink, externalLink, image, technologies} = Astro.props;
 ---
@@ -9,8 +10,16 @@ const {title, description, gitLink, externalLink, image, technologies} = Astro.p
     <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none
     lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]
     lg:group-hover:drop-shadow-lg"></div>
-    <img src={image} alt="Imagén del proyecto"
-         class="relative z-10 max-h-40 opacity-85 object-cover object-center rounded-md">
+    <div class="relative z-10 max-h-40 sm:max-h-28 xl:max-h-40 overflow-hidden rounded-md">
+        <Image
+                src={image}
+                alt="Imagen del proyecto"
+                class="object-cover object-center"
+                width={500}
+                height={300}
+        />
+    </div>
+
     <div class="z-10">
         <div class="flex justify-between">
             <h3 class="flex justify-between font-semibold leading-snug ">
@@ -45,7 +54,7 @@ const {title, description, gitLink, externalLink, image, technologies} = Astro.p
               }
             </div>
         </div>
-        <p class="mt-2 text-sm font-medium leading-normal">{description}</p>
+        <p class="mt-2 text-[13px] font-medium leading-normal">{description}</p>
     </div>
     <ul class="relative mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
       {technologies.map(({name}: { name: string }) => {
