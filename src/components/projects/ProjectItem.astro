@@ -12,17 +12,19 @@ const {title, description, gitLink, externalLink, image, technologies} = Astro.p
     <img src={image} alt="Imagén del proyecto"
          class="relative z-10 max-h-40 opacity-85 object-cover object-center rounded-md">
     <div class="z-10">
-        <h3 class="flex justify-between font-semibold leading-snug ">
-            <a class="inline-flex items-baseline hover:text-indigo-400 focus-visible:text-indigo-400 group/link text-base"
-               href={externalLink || gitLink} target="_blank"
-               rel="noreferrer noopener"
-               aria-label="Repositorio del proyecto (se abre en una nueva pestaña)"><span
-                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                <span>{title}
-                    <ArrowRightIcon
-                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"/>
-              </span>
-            </a>
+        <div class="flex justify-between">
+            <h3 class="flex justify-between font-semibold leading-snug ">
+                <a class="inline-flex items-baseline hover:text-indigo-400 focus-visible:text-indigo-400 group/link text-base"
+                   href={externalLink || gitLink} target="_blank"
+                   rel="noreferrer noopener"
+                   aria-label="Repositorio del proyecto (se abre en una nueva pestaña)"><span
+                        class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                    <span>{title}
+                        <ArrowRightIcon
+                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"/>
+                  </span>
+                </a>
+            </h3>
             <div class="flex gap-2">
               {gitLink &&
                       <a href={gitLink}
@@ -30,7 +32,7 @@ const {title, description, gitLink, externalLink, image, technologies} = Astro.p
                          target="_blank" rel="noopener noreferrer" title="Github">
                           <span class="sr-only">GitHub</span>
                           <GithubIcon
-                                  class="relative z-10 h-5 w-5 hover:text-indigo-400 colors-transform duration-300"/>
+                                  class="relative h-5 w-5 hover:text-indigo-400 colors-transform duration-300"/>
                       </a>
               }
               {externalLink &&
@@ -38,15 +40,15 @@ const {title, description, gitLink, externalLink, image, technologies} = Astro.p
                          title="External Link">
                           <span class="sr-only">External Link</span>
                           <ExternalLinkIcon
-                                  class="relative z-10 h-5 w-5 hover:text-indigo-400 colors-transform duration-300"/>
+                                  class="relative h-5 w-5 hover:text-indigo-400 colors-transform duration-300"/>
                       </a>
               }
             </div>
-        </h3>
+        </div>
         <p class="mt-2 text-sm font-medium leading-normal">{description}</p>
     </div>
     <ul class="relative mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
-      {technologies.map(({name}) => {
+      {technologies.map(({name}: { name: string }) => {
         const className = technologyColors[name] ?? "text-indigo-400";
         return (
                 <li class="mr-1.5 mt-2">
@@ -57,5 +59,4 @@ const {title, description, gitLink, externalLink, image, technologies} = Astro.p
         );
       })}
     </ul>
-
 </li>

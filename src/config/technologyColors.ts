@@ -1,4 +1,4 @@
-export const technologyColors = {
+export const technologyColors: { [key: string]: string } = {
   "Node.js": "text-green-300",
   Express: "text-gray-300",
   MongoDB: "text-emerald-300",
