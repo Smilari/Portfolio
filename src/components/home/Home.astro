@@ -3,30 +3,25 @@ import EmailIcon from "@icons/Email.astro";
 import CvIcon from "@icons/Cv.astro";
 import GithubIcon from "@icons/Github.astro";
 import LinkedInIcon from "@icons/LinkedIn.astro";
-import CIcon from "@icons/tecnologies/C.astro";
-import CSSIcon from "@icons/tecnologies/CSS.astro";
-import ExpressIcon from "@icons/tecnologies/Express.astro";
-import HTMLIcon from "@icons/tecnologies/HTML.astro";
-import JavaIcon from "@icons/tecnologies/Java.astro";
-import JSIcon from "@icons/tecnologies/JS.astro";
-import MongoIcon from "@icons/tecnologies/Mongo.astro";
-import MySQLIcon from "@icons/tecnologies/MySQL.astro";
-import SpringIcon from "@icons/tecnologies/Spring.astro";
-import TailwindIcon from "@icons/tecnologies/Tailwind.astro";
 
 import ContactButton from "@components/home/ContactButton.astro";
+import { Image } from "astro:assets";
 
 const technologies = [
-  {icon: TailwindIcon},
-  {icon: MongoIcon},
-  {icon: ExpressIcon},
-  {icon: HTMLIcon},
-  {icon: CSSIcon},
-  {icon: JSIcon},
-  {icon: CIcon},
-  {icon: JavaIcon},
-  {icon: SpringIcon},
-  {icon: MySQLIcon},
+  {technology: "html"},
+  {technology: "css"},
+  {technology: "tailwind"},
+  {technology: "javascript"},
+  {technology: "typescript"},
+  {technology: "astro"},
+  {technology: "express"},
+  {technology: "c"},
+  {technology: "java"},
+  {technology: "spring"},
+  {technology: "mongodb"},
+  {technology: "mysql"},
+  {technology: "git"},
+  {technology: "linux"},
 ];
 ---
 
@@ -55,9 +50,20 @@ const technologies = [
         </div>
     </div>
 
-    <footer class="absolute bottom-20 left-0 right-0 flex justify-center items-center gap-3">
-      {technologies.map(({icon: Icon}) => (
-              <Icon class="w-7 h-7 opacity-75"/>
-      ))}
+    <footer class="absolute bottom-20 left-0 right-0 flex justify-center">
+        <a class="grid grid-cols-7 gap-2"
+           href="https://skillicons.dev"
+           target="_blank" rel="noreferrer noopener"
+           aria-label="Skill Icons">
+          {technologies.map(({technology}) => (
+                  <Image
+                          class="opacity-80 transition-transform duration-150 hover:scale-[120%]"
+                          src={`https://skillicons.dev/icons?i=${technology}`}
+                          alt={technology}
+                          width={32}
+                          height={32}
+                  />
+          ))}
+        </a>
     </footer>
 </section>
