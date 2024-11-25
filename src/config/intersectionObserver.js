@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const sections = document.querySelectorAll('section'); // Selecciona todas las secciones
-  console.log('sections');
-  const navLinks = document.querySelectorAll('nav ul li a'); // Selecciona todos los enlaces del navbar
+  const sections = document.querySelectorAll('section');
+  console.log(sections);
+  const navLinks = document.querySelectorAll('nav ul li a');
+  console.log(navLinks);
 
-  // Crea un Intersection Observer
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Si la sección es visible, activa el enlace correspondiente
         navLinks.forEach(link => {
           link.classList.remove('nav-active');
           if (link.getAttribute('href').substring(1) === entry.target.id) {
@@ -17,10 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }, {
-    threshold: 0.4, // El porcentaje de visibilidad de la sección antes de activarse (ajustable)
+    threshold: 0.4,
   });
 
-  // Observa cada sección
   sections.forEach(section => {
     observer.observe(section);
   });
