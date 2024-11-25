@@ -1,0 +1,63 @@
+---
+import EmailIcon from "@icons/Email.astro";
+import CvIcon from "@icons/Cv.astro";
+import GithubIcon from "@icons/Github.astro";
+import LinkedInIcon from "@icons/LinkedIn.astro";
+import CIcon from "@icons/tecnologies/C.astro";
+import CSSIcon from "@icons/tecnologies/CSS.astro";
+import ExpressIcon from "@icons/tecnologies/Express.astro";
+import HTMLIcon from "@icons/tecnologies/HTML.astro";
+import JavaIcon from "@icons/tecnologies/Java.astro";
+import JSIcon from "@icons/tecnologies/JS.astro";
+import MongoIcon from "@icons/tecnologies/Mongo.astro";
+import MySQLIcon from "@icons/tecnologies/MySQL.astro";
+import SpringIcon from "@icons/tecnologies/Spring.astro";
+import TailwindIcon from "@icons/tecnologies/Tailwind.astro";
+
+import ContactButton from "@components/home/ContactButton.astro";
+
+const technologies = [
+  {icon: TailwindIcon},
+  {icon: MongoIcon},
+  {icon: ExpressIcon},
+  {icon: HTMLIcon},
+  {icon: CSSIcon},
+  {icon: JSIcon},
+  {icon: CIcon},
+  {icon: JavaIcon},
+  {icon: SpringIcon},
+  {icon: MySQLIcon},
+];
+---
+
+<section id="home" class="relative flex h-screen w-screen">
+    <div class="flex flex-col space-y-12 text-center justify-center w-full">
+        <h1 class="font-semibold text-4xl sm:text-5xl lg:text-6xl">
+            <span class="block text-indigo-400 text-4xl sm:text-5xl lg:text-6xl mb-4">Software Developer</span>
+            Lucas Smilari</h1>
+
+        <div class="flex flex-col justify-center items-center gap-4">
+            <button class="group flex relative font-semibold items-center gap-3 bg-indigo-400 px-2 pb-0.5 pt-1 rounded-lg transform duration-300 hover:scale-105">
+                <a href="mailto:smilari.lucas@gmail.com" target="_blank" rel="noreferrer noopener"
+                   aria-label="Email" title="Email"><span
+                        class="absolute -inset-y-1 -inset-x-0.5 rounded"></span>
+                    <EmailIcon class="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8"></EmailIcon>
+                </a>
+                <span class="text-xs sm:text-sm lg:text-base">smilari.lucas@gmail.com</span>
+            </button>
+
+            <ul class="flex justify-center items-center gap-4">
+                <ContactButton icon={CvIcon} href="./assets/Smilari-Lucas.pdf" label="CV" title="CV"/>
+                <ContactButton icon={GithubIcon} href="https://github.com/smilari" label="GitHub" title="GitHub"/>
+                <ContactButton icon={LinkedInIcon} href="https://www.linkedin.com/in/lucas-smilari/" label="LinkedIn"
+                               title="LinkedIn"/>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="absolute bottom-20 left-0 right-0 flex justify-center items-center gap-3">
+      {technologies.map(({icon: Icon}) => (
+              <Icon class="w-7 h-7 opacity-75"/>
+      ))}
+    </footer>
+</section>
