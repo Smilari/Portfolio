@@ -1,0 +1,14 @@
+---
+import GraduationCapIcon from "@icons/GraduationCap.astro";
+const {institution, period} = Astro.props;
+---
+<li class="mb-10 ms-6">
+    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-900 rounded-full -start-3 ring-2 ring-indigo-400">
+        <GraduationCapIcon class="w-4 h-4 text-blue-300"/>
+    </span>
+    <h3 class="mb-1 text-lg font-semibold">{institution}</h3>
+    <time class="block mb-2 text-sm font-medium leading-none text-slate-500">{period}</time>
+    <p class="mb-4 text-sm font-medium text-balance text-slate-300">
+        <slot/>
+    </p>
+</li>

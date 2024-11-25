@@ -1,0 +1,17 @@
+export const technologyColors = {
+  "Node.js": "text-green-300",
+  Express: "text-gray-300",
+  MongoDB: "text-emerald-300",
+  Mongoose: "text-red-300",
+  JWT: "text-purple-300",
+  JavaScript: "text-yellow-300",
+  Java: "text-red-300",
+  Spring: "text-green-300",
+  "Spring Security": "text-teal-300",
+  Thymeleaf: "text-lime-300",
+  MySQL: "text-blue-300",
+  Hibernate: "text-orange-300",
+  Lombok: "text-red-300",
+  C: "text-gray-300",
+  PL0: "text-teal-300",
+};

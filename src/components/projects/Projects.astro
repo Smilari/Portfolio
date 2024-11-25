@@ -1,0 +1,47 @@
+---
+import Section from "@utils/Section.astro";
+import ProjectItem from "@components/projects/ProjectItem.astro";
+---
+<Section id="projects" title="Proyectos" class="mb-20">
+    <ul class="group/list mx-auto flex flex-col gap-16">
+        <ProjectItem title="API REST de Todo-List"
+                     description="API REST para gestionar una lista de tareas. La persistencia se realizó utilizando MongoDB y el manejo de autenticación se realiza utilizando JWT."
+                     externalLink="https://todografo.vercel.app" gitLink="https://github.com/Smilari/Todo-list"
+                     image="src/assets/API-REST-Todo-List.webp"
+                     technologies={[
+                       {name: "Node.js"},
+                       {name: "Express"},
+                       {name: "MongoDB"},
+                       {name: "Mongoose"},
+                       {name: "JWT"},
+                       {name: "JavaScript"},
+                     ]}/>
+        <ProjectItem title="Ejercito Militar Argentino"
+                     description="Web de Gestión ABM para soldados con rangos diferenciados y login personalizado. Se utilizo Spring Security para garantizar la seguridad de cada usuario, encriptando la contraseña entrante."
+                     gitLink="https://github.com/Smilari/Ejercito-Militar-Argentino-Java/tree/final"
+                     image="src/assets/ejercito-militar-web.webp"
+                     technologies={[
+                       {name: "Java"},
+                       {name: "Spring"},
+                       {name: "Spring Security"},
+                       {name: "Thymeleaf"},
+                       {name: "MySQL"},
+                       {name: "Hibernate"},
+                       {name: "Lombok"},
+                     ]}/>
+        <ProjectItem title="Biblioteca GML"
+                     description="Proyecto ABM para gestión de socios y prestación y stock de libros. Empleando archivos binarios, punteros y funciones modularizadas. La persistencia fue recreada con archivos."
+                     gitLink="https://github.com/Smilari/Biblioteca-GML" image="src/assets/biblioteca-GML-diagrama.png"
+                     technologies={[
+                       {name: "MySQL"},
+                       {name: "C"},
+                     ]}/>
+        <ProjectItem title="Compilador PL0"
+                     description="Compilador para el lenguaje PL/0 desarrollado en Java. PL/0 es un pequeño lenguaje de programación de propósito educativo utilizado para enseñar los conceptos básicos de compiladores. Este proyecto incluye las funcionalidades de análisis léxico, sintáctico y semántico, así como la generación de código."
+                     gitLink="https://github.com/Smilari/Compilador-PL0" image="src/assets/Compilador-PL0.webp"
+                     technologies={[
+                       {name: "Java"},
+                       {name: "PL0"},
+                     ]}/>
+    </ul>
+</Section>

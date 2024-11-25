@@ -1,0 +1,61 @@
+---
+import ArrowRightIcon from "@icons/ArrowRight.astro";
+import GithubIcon from "@icons/Github.astro";
+import ExternalLinkIcon from "@icons/ExternalLink.astro";
+import { technologyColors } from "../../config/technologyColors.ts";
+const {title, description, gitLink, externalLink, image, technologies} = Astro.props;
+---
+<li class="group relative flex flex-col pb-1 transition-all gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+    <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none
+    lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)]
+    lg:group-hover:drop-shadow-lg"></div>
+    <img src={image} alt="Imagén del proyecto"
+         class="relative z-10 max-h-40 opacity-85 object-cover object-center rounded-md">
+    <div class="z-10">
+        <h3 class="flex justify-between font-semibold leading-snug ">
+            <a class="inline-flex items-baseline hover:text-indigo-400 focus-visible:text-indigo-400 group/link text-base"
+               href={externalLink || gitLink} target="_blank"
+               rel="noreferrer noopener"
+               aria-label="Repositorio del proyecto (se abre en una nueva pestaña)"><span
+                    class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                <span>{title}
+                    <ArrowRightIcon
+                            class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"/>
+              </span>
+            </a>
+            <div class="flex gap-2">
+              {gitLink &&
+                      <a href={gitLink}
+                         aria-label="GitHub Link"
+                         target="_blank" rel="noopener noreferrer" title="Github">
+                          <span class="sr-only">GitHub</span>
+                          <GithubIcon
+                                  class="relative z-10 h-5 w-5 hover:text-indigo-400 colors-transform duration-300"/>
+                      </a>
+              }
+              {externalLink &&
+                      <a href={externalLink} aria-label="External Link" target="_blank" rel="noopener noreferrer"
+                         title="External Link">
+                          <span class="sr-only">External Link</span>
+                          <ExternalLinkIcon
+                                  class="relative z-10 h-5 w-5 hover:text-indigo-400 colors-transform duration-300"/>
+                      </a>
+              }
+            </div>
+        </h3>
+        <p class="mt-2 text-sm font-medium leading-normal">{description}</p>
+    </div>
+    <ul class="relative mt-2 flex flex-wrap" aria-label="Tecnologías utilizadas">
+      {technologies.map(({name}) => {
+        const className = technologyColors[name] ?? "text-indigo-400";
+        return (
+                <li class="mr-1.5 mt-2">
+                    <div class={`flex items-center bg-blue-500/10 text-opacity-85 rounded-full px-3 py-1 text-xs font-medium leading-5 ${className}`}>
+                      {name}
+                    </div>
+                </li>
+        );
+      })}
+    </ul>
+
+</li>
