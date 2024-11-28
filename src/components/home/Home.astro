@@ -7,20 +7,20 @@ import LinkedInIcon from "@icons/LinkedIn.astro";
 import ContactButton from "@components/home/ContactButton.astro";
 
 const technologies = [
-  {technology: "html"},
-  {technology: "css"},
-  {technology: "tailwind"},
-  {technology: "javascript"},
-  {technology: "typescript"},
-  {technology: "astro"},
-  {technology: "express"},
-  {technology: "c"},
-  {technology: "java"},
-  {technology: "spring"},
-  {technology: "mongodb"},
-  {technology: "mysql"},
-  {technology: "git"},
-  {technology: "linux"},
+  {technology: "html", href: "https://developer.mozilla.org/en-US/docs/Web/HTML"},
+  {technology: "css", href: "https://developer.mozilla.org/en-US/docs/Web/CSS"},
+  {technology: "tailwind", href: "https://tailwindcss.com/"},
+  {technology: "javascript", href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"},
+  {technology: "typescript", href: "https://www.typescriptlang.org/"},
+  {technology: "astro", href: "https://astro.build/"},
+  {technology: "express", href: "https://expressjs.com/"},
+  {technology: "c", href: "https://en.wikipedia.org/wiki/C_(programming_language)"},
+  {technology: "java", href: "https://www.java.com/"},
+  {technology: "spring", href: "https://spring.io/"},
+  {technology: "mongodb", href: "https://www.mongodb.com/"},
+  {technology: "mysql", href: "https://www.mysql.com/"},
+  {technology: "git", href: "https://git-scm.com/"},
+  {technology: "linux", href: "https://www.linux.org/"},
 ];
 ---
 
@@ -50,19 +50,20 @@ const technologies = [
     </div>
 
     <footer class="absolute bottom-20 left-0 right-0 flex justify-center">
-        <a class="grid grid-cols-7 gap-2"
-           href="https://skillicons.dev"
-           target="_blank" rel="noreferrer noopener"
-           aria-label="Skill Icons">
-          {technologies.map(({technology}) => (
-                  <img
-                          class="opacity-80 transition-transform duration-150 hover:scale-[120%]"
-                          src={`https://skillicons.dev/icons?i=${technology}`}
-                          alt={technology}
-                          width="32"
-                          height="32"
-                  />
+        <div class="grid grid-cols-7 gap-2">
+          {technologies.map(({technology, href}) => (
+                  <a href={href}
+                     target="_blank" rel="noreferrer noopener"
+                     aria-label="Skill Icon" title="Skill Icon">
+                      <img
+                              class="opacity-80 transition-transform duration-150 hover:scale-[120%]"
+                              src={`https://skillicons.dev/icons?i=${technology}`}
+                              alt={technology}
+                              width="32"
+                              height="32"
+                      />
+                  </a>
           ))}
-        </a>
+        </div>
     </footer>
 </section>
