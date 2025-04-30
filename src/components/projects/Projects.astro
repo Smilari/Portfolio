@@ -7,11 +7,10 @@ import ejercitoMilitarWeb from "@assets/ejercito-militar-web.avif";
 import bibliotecaGML from "@assets/biblioteca-GML-diagrama.avif";
 import compiladorPL0 from "@assets/Compilador-PL0.avif";
 ---
-<Section class="lg:!w-3/4" id="projects" title="Proyectos" class="mb-20">
+<Section class="lg:!w-3/4" id="projects" title="Projects" class="mb-20">
     <ul class="group/list mx-auto grid grid-cols-1 sm:grid-cols-2 gap-16">
-        <ProjectItem title="Mate y Tradición"
-
-                     description="Web dedicada a la exploración de la cultura y la historia del mate (bebida) a través de una interfaz intuitiva y moderna."
+        <ProjectItem title="Mate and Tradition"
+                     description="Website dedicated to exploring the culture and history of mate (the drink) through an intuitive and modern interface."
                      externalLink="https://mateytradicion.netlify.app" gitLink="https://github.com/Smilari/Mateando"
                      image={mateyTradicion}
                      technologies={[
@@ -21,8 +20,8 @@ import compiladorPL0 from "@assets/Compilador-PL0.avif";
                        {name: "React"},
                        {name: "Netlify"},
                      ]}/>
-        <ProjectItem title="API REST de Todo-List"
-                     description="API REST para gestionar una lista de tareas. La persistencia se realizó utilizando MongoDB y el manejo de autenticación se realiza utilizando JWT."
+        <ProjectItem title="Todo-List REST API"
+                     description="REST API to manage a list of tasks. Persistence was implemented using MongoDB, and authentication handling uses JWT."
                      externalLink="https://todografo.vercel.app" gitLink="https://github.com/Smilari/Todo-list"
                      image={apiRestTodoList}
                      technologies={[
@@ -33,8 +32,8 @@ import compiladorPL0 from "@assets/Compilador-PL0.avif";
                        {name: "JWT"},
                        {name: "JavaScript"},
                      ]}/>
-        <ProjectItem title="Ejercito Militar Argentino"
-                     description="Web de Gestión ABM para soldados con rangos diferenciados y login personalizado. Se utilizo Spring Security para garantizar la seguridad de cada usuario, encriptando la contraseña entrante."
+        <ProjectItem title="Argentine Military Army"
+                     description="ABM management web for soldiers with differentiated ranks and custom login. Spring Security was used to ensure user security by encrypting incoming passwords."
                      gitLink="https://github.com/Smilari/Ejercito-Militar-Argentino-Java"
                      image={ejercitoMilitarWeb}
                      technologies={[
@@ -46,16 +45,16 @@ import compiladorPL0 from "@assets/Compilador-PL0.avif";
                        {name: "Hibernate"},
                        {name: "Lombok"},
                      ]}/>
-        <ProjectItem title="Biblioteca GML"
-                     description="Proyecto ABM para gestión de socios y prestación y stock de libros. Empleando archivos binarios, punteros y funciones modularizadas. La persistencia fue recreada con archivos."
+        <ProjectItem title="GML Library"
+                     description="ABM project for managing members and book lending and stock. It utilizes binary files, pointers, and modular functions. Persistence was recreated using files."
                      gitLink="https://github.com/Smilari/Biblioteca-GML"
                      image={bibliotecaGML}
                      technologies={[
                        {name: "C"},
                        {name: "MySQL"},
                      ]}/>
-        <ProjectItem title="Compilador PL0"
-                     description="Compilador PL/0 (lenguaje educativo), hecho en Java. Este proyecto incluye las funcionalidades de análisis léxico, sintáctico y semántico, así como la generación de código."
+        <ProjectItem title="PL0 Compiler"
+                     description="PL/0 compiler (educational language), built in Java. This project includes lexical, syntactic, and semantic analysis functionalities, as well as code generation."
                      gitLink="https://github.com/Smilari/Compilador-PL0"
                      image={compiladorPL0}
                      technologies={[
